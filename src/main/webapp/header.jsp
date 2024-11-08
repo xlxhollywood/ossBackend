@@ -26,7 +26,7 @@
                     <a class="nav-link" href="${pageContext.request.contextPath}/write.html">Create User</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/show-user">Show User</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/list.jsp">Show User</a>
                 </li>
             </ul>
         </div>
