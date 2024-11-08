@@ -33,7 +33,7 @@
             <td>2023001</td>
             <td>Computer Science</td>
             <td>
-                <a href="edit-user.jsp?id=1">
+                <a href="http://localhost:8080/hellojsp_war_exploded/edit.html">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                 </a>
                 <a href="view.jsp">

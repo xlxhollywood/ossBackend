@@ -46,9 +46,9 @@
 </nav>
 <div class="user-form">
     <div class="heading">
-        <p>User Form</p>
+        <p>Edit Form</p>
     </div>
-    <form id="userForm" action="write_ok.jsp" method="post">
+    <form id="userForm" action="edit_ok.jsp" method="post">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" name="name">
@@ -103,7 +103,6 @@
             errorElement.style.display = "none";
             alert("Form submitted successfully!");
 
-            // 폼을 직접 제출하여 write_ok.jsp로 이동
             document.getElementById("userForm").submit();
         }
     });
