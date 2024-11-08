@@ -23,7 +23,7 @@
                     <a class="nav-link" href="${pageContext.request.contextPath}/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}/create-user">Create User</a>
+                    <a class="nav-link" href="${pageContext.request.contextPath}/write.html">Create User</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="${pageContext.request.contextPath}/show-user">Show User</a>
