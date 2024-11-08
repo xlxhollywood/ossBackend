@@ -12,7 +12,7 @@
 <nav class="navbar navbar-expand-sm custom-navbar">
     <div class="container-fluid">
         <a class="navbar-brand" href="${pageContext.request.contextPath}/">
-            <span class="navbar-custom">React CRUD</span>
+            <span class="navbar-custom">JSP CRUD</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>

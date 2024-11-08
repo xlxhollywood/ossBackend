@@ -21,11 +21,34 @@
     </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="http://localhost:8080/hellojsp_war_exploded/">
+            <span class="navbar-custom">JSP CRUD</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8080/hellojsp_war_exploded/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hellojsp_war_exploded/write.html">Create User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/show-user">Show User</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <div class="user-form">
     <div class="heading">
         <p>User Form</p>
     </div>
-    <form id="userForm">
+    <form id="userForm" action="write_ok.jsp" method="post">
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" name="name">
@@ -38,12 +61,10 @@
             <label for="phone" class="form-label">Phone</label>
             <input type="text" class="form-control" id="phone" name="phone">
         </div>
-        <!-- Student ID Field -->
         <div class="mb-3">
             <label for="studentId" class="form-label">Student ID</label>
             <input type="text" class="form-control" id="studentId" name="studentId">
         </div>
-        <!-- Major Field -->
         <div class="mb-3">
             <label for="major" class="form-label">Major</label>
             <input type="text" class="form-control" id="major" name="major">
@@ -81,8 +102,9 @@
         } else {
             errorElement.style.display = "none";
             alert("Form submitted successfully!");
-            // Clear form
-            document.getElementById("userForm").reset();
+
+            // 폼을 직접 제출하여 write_ok.jsp로 이동
+            document.getElementById("userForm").submit();
         }
     });
 </script>
